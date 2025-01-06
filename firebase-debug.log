@@ -1,0 +1,116 @@
+[debug] [2025-01-06T04:11:46.581Z] ----------------------------------------------------------------------
+[debug] [2025-01-06T04:11:46.587Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-06T04:11:46.588Z] CLI Version:   13.29.1
+[debug] [2025-01-06T04:11:46.589Z] Platform:      win32
+[debug] [2025-01-06T04:11:46.589Z] Node Version:  v22.2.0
+[debug] [2025-01-06T04:11:46.590Z] Time:          Mon Jan 06 2025 09:41:46 GMT+0530 (India Standard Time)
+[debug] [2025-01-06T04:11:46.590Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-06T04:11:46.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-06T04:11:46.769Z] > authorizing via signed-in user (manavmalaviya27@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\ikaros-client
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-06T04:13:09.583Z] Using project from CLI flag: ikaros-cloud
+[debug] [2025-01-06T04:13:09.584Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:13:09.584Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:13:09.585Z] > refreshing access token with scopes: []
+[debug] [2025-01-06T04:13:09.587Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-06T04:13:09.588Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:13:21.985Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-01-06T04:13:21.985Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:13:21.985Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud [none]
+[debug] [2025-01-06T04:13:22.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud 401
+[debug] [2025-01-06T04:13:22.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-01-06T04:13:22.610Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-01-06T04:13:22.610Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:13:22.610Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:13:22.610Z] > refreshing access token with scopes: []
+[debug] [2025-01-06T04:13:22.611Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-06T04:13:22.611Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:13:22.776Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-01-06T04:13:22.776Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:13:22.777Z] Request to https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-01-06T04:13:23.086Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project ikaros-cloud. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-01-06T04:18:57.149Z] ----------------------------------------------------------------------
+[debug] [2025-01-06T04:18:57.155Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-06T04:18:57.156Z] CLI Version:   13.29.1
+[debug] [2025-01-06T04:18:57.156Z] Platform:      win32
+[debug] [2025-01-06T04:18:57.157Z] Node Version:  v22.2.0
+[debug] [2025-01-06T04:18:57.157Z] Time:          Mon Jan 06 2025 09:48:57 GMT+0530 (India Standard Time)
+[debug] [2025-01-06T04:18:57.158Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-06T04:18:57.291Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-06T04:18:57.292Z] > authorizing via signed-in user (manavmalaviya27@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\ikaros-client
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-06T04:19:26.218Z] Using project from CLI flag: ikaros-cloud
+[debug] [2025-01-06T04:19:26.220Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:19:26.220Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:19:26.220Z] > refreshing access token with scopes: []
+[debug] [2025-01-06T04:19:26.223Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-06T04:19:26.223Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:19:37.696Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-01-06T04:19:37.697Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:19:37.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud [none]
+[debug] [2025-01-06T04:19:38.291Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud 401
+[debug] [2025-01-06T04:19:38.291Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-01-06T04:19:38.292Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-01-06T04:19:38.292Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:19:38.292Z] Checked if tokens are valid: false, expires at: 1718018772410
+[debug] [2025-01-06T04:19:38.292Z] > refreshing access token with scopes: []
+[debug] [2025-01-06T04:19:38.293Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-06T04:19:38.294Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:19:38.400Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-01-06T04:19:38.400Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-06T04:19:38.402Z] Request to https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-01-06T04:19:38.698Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/ikaros-cloud had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\manav\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project ikaros-cloud. Please make sure the project exists and your account has permission to access it.
